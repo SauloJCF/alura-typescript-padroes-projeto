@@ -31,8 +31,8 @@ export class AddTaskController implements Controller {
       }
 
       const task = await this.addTask.add({ title, description, date });
-      // return created(task);
-      throw new Error('Erro forçado!');
+      
+      return created(task);
     }
     catch (error: any) {
       return serverError(error);
