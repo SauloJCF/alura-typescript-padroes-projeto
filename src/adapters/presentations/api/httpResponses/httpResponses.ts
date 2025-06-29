@@ -17,5 +17,9 @@ export const created = (data: any): HttpResponse => ({
   body: data,
 });
 export const noContent = (): HttpResponse => ({
-  statusCode: 204,
+  statusCode: 204
+});
+export const notFound = (data: any): HttpResponse => ({
+  statusCode: 404,
+  body: data,
 });

@@ -5,7 +5,7 @@ import { AddTaskController } from "../controllers/task/addTask";
 import LogErrorControllerDecorator from "../decorators/logErrorControllerDecorator";
 import { addTaskValidationCompositeFactory } from "./addTaskValidationCompositeFactory";
 
-export  const taskControllerFactory = () => {
+export  const addTaskControllerFactory = () => {
   const taskMongoRepository = new TaskMongoRepository(); // repositório
   const dbAddTask = new DbAddTask(taskMongoRepository); // serviço
 
