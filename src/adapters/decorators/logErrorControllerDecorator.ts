@@ -1,5 +1,4 @@
-import { Controller } from "../interfaces/controller";
-import { HttpRequest, HttpResponse } from "../interfaces/http";
+import { Controller, HttpRequest, HttpResponse } from "../interfaces";
 import { LogErrorRepository } from "../../usecases/repository/logErrorRepository";
 
 export default class LogErrorControllerDecorator implements Controller {

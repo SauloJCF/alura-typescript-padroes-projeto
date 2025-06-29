@@ -4,9 +4,8 @@ import {
   created,
   serverError,
 } from "../../presentations/api/httpResponses/httpResponses";
-import { Controller } from "../../interfaces/controller";
-import { AddTask } from "../../../usecases/addTask";
-import { Validation } from "../../interfaces/validation";
+import { Controller, Validation } from "../../interfaces";
+import { AddTask } from "../../../usecases";
 
 export class AddTaskController implements Controller {
   constructor(private readonly addTask: AddTask, private validation: Validation) { }

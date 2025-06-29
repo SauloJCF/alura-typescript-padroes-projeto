@@ -5,9 +5,8 @@ import {
   notFound,
   serverError,
 } from "../../presentations/api/httpResponses/httpResponses";
-import { Controller } from "../../interfaces/controller";
-import { Validation } from "../../interfaces/validation";
-import { DeleteTask } from "../../../usecases/deleteTask";
+import { Controller, Validation } from "../../interfaces";
+import { DeleteTask } from "../../../usecases";
 
 export class DeleteTaskController implements Controller {
   constructor(private readonly deleteTask: DeleteTask, private validation: Validation) { }

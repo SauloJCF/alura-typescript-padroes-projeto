@@ -1,6 +1,5 @@
-import { Validation } from "../interfaces/validation";
-import { RequiredFieldValidation } from "../validations/requiredFieldValidation";
-import { ValidationComposite } from "../validations/validationComposite";
+import { Validation } from "../interfaces";
+import { RequiredFieldValidation, ValidationComposite } from "../validations";
 
 export const deleteTaskValidationCompositeFactory = (): ValidationComposite => {
     const validations: Validation[] = [];

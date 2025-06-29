@@ -1,8 +1,7 @@
 import { ObjectId } from "mongodb";
 import { Task } from "../../../entities/task";
-import { AddATaskModel } from "../../../usecases/addTask";
-import { AddTaskRepository } from "../../../usecases/repository/addTaskRepository";
-import { DeleteTaskRepository } from "../../../usecases/repository/deleteTaskRepository";
+import { AddATaskModel } from "../../../usecases";
+import { AddTaskRepository, DeleteTaskRepository } from "../../../usecases/repository";
 import { MongoManager } from "../../config/mongoManager";
 
 export class TaskMongoRepository implements AddTaskRepository, DeleteTaskRepository {
